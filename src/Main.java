@@ -1,15 +1,33 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        System.out.println("> EXECUÇÃO DOS EXEMPLOS - JAVA COLLECTIONS");
+        System.out.println("> Para testar cada tópico individualmente, execute a classe correspondente.");
+        System.out.println("> Exemplo: execute 'InterfaceCollection.main()' para ver os exemplos básicos.\n");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        // Aqui você pode descomentar para rodar tudo de uma vez, se quiser
+
+        System.out.println("--- 1. Interface Collection ---");
+        InterfaceCollection.main(args);
+
+        System.out.println("\n--- 2. Listas ---");
+        Listas.main(args);
+
+        System.out.println("\n--- 3. Conjuntos ---");
+        Conjuntos.main(args);
+
+        System.out.println("\n--- 4. Filas ---");
+        Filas.main(args);
+
+        System.out.println("\n--- 5. Mapas ---");
+        Mapas.main(args);
+
+        System.out.println("\n--- 6. Iteradores ---");
+        Iteradores.main(args);
+
+        System.out.println("\n--- 7. Imutáveis ---");
+        ColecoesImutaveis.main(args);
+
+        System.out.println("\n--- 8. Concorrentes ---");
+        ColecoesSincronizadasConcorrentes.main(args);
     }
 }
